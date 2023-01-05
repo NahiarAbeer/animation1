@@ -1,0 +1,118 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: purple;
+    
+    position: relative;
+}
+.ball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: -10%;
+    background-color: rgb(9, 245, 131);
+    transition: 5s ease-in-out;
+  } 
+header:hover .ball{
+    background-color: rgb(255, 221, 0);
+    transform: translate(1200px,200px) rotate(360deg);
+    border-radius: 2px;
+    transition: 5s ease-in-out;
+    
+}
+header nav {
+    align-items: center;
+    display: flex;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    
+}
+header nav ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+    font-weight: 900;
+    transition: 3s ease-in-out;
+}
+header nav ul li a:hover{
+    letter-spacing: 2px;
+    transform:translate(4px,6px) scale(110%) rotate(30deg);
+    transition: 1s ease-in-out;
+}
+header nav ul li button {
+    color: black;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    height: 30px;
+    padding: 6px 10px;
+    font-weight: bold;
+    transition: 2s;
+    
+} 
+header nav ul li button:hover {
+    background-color: orangered ;
+    transition-delay: .1s;
+    letter-spacing: 3px;
+    font-size: larger;
+    font-weight: bolder;
+    height:auto;
+    padding: 9px 12px;
+    transform: rotate(-1080deg);
+
+    transition: 2s;
+}
+.sqr {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    /* display: flex; */
+    transition: 2s;
+}
+.sqr p {
+    visibility: hidden;
+    display: inline;
+}
+.in {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    transition: 4s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.sqr:hover .in{
+    top: 50%;
+    left: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: darkviolet;
+    transform: translate(300px,200px) scale(90%) rotate(720deg);
+    border-radius: 50%;
+    transition: 4s;
+}
+.sqr:hover .p {
+    visibility: visible;
+    transition: 4s;
+    text-align: center;
+    align-items: center;
+}
+.audio {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+}
